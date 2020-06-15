@@ -4,27 +4,27 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { QuoteComponent } from './quotes/quotes.component';
-import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
-import { UnderlineDirective } from './underline.directive';
-import { DateCountPipe, DateCountsPipe } from './date-counts.pipe';
+import { QuoteComponent } from './quote/quote.component';
+import { DateCountPipe } from './date-counts.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { AppRoutingModule } from './app-routing.module';
+import { from } from 'rxjs';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuotesDetailComponent,
-    UnderlineDirective,
     DateCountPipe,
     QuoteFormComponent,
-    DateCountsPipe
+    QuoteDetailComponent
 
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
 
 
   ],

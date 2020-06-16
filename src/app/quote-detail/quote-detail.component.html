@@ -1,1 +1,11 @@
-<p>quote-detail works!</p>
+<div class="card-body">
+    <p> Author: {{quote.description}}</p>
+    <p> Posted By: {{quote.author}} </p>
+     <div>
+        <p>Posted on: {{quote.postDate|dateCount}} .</p>
+        <app-count-input></app-count-input>
+       </div>
+       <div class="button">
+        <button (click)='quoteDelete(true)' class="btn btn-danger">Delete Quote</button>
+       </div>
+</div>

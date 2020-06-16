@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,9 +7,10 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  
 
   quotes: Quote[] = [
-   new Quote('Time may change me, but I cant trace time.', 'George', 'Marisa Lacsa', new Date(2020,4,1)),
+   new Quote('Be miserable. Or motivate yourself. Whatever has to be done, it’s always your choice.', 'George', 'Marisa Lacsa', new Date(2020,4,1)),
    new Quote('The way to get started is to quit talking and begin doing.', 'Becky Innocent', 'Walt Disney', new Date(2020,8,5)),
    new Quote('Tell me and I forget. Teach me and I remember. Involve me and I learn', 'Agnes', 'Benjamin Franklin', new Date(2020,9,4))
   ];
@@ -33,6 +34,18 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate);
     this.quotes.push(quote);
   }
+  @Input()
+counterValue = 0;
+counteValue = 0;
+
+
+upvote(i){
+  this.quotes[i].upvote+=1
+  }
+
+ downvote (i){
+  this.quotes[i].downvote+=1
+}
   addVote(quote, index) {
     if (quote) {
       this.quotes[index].upvote += 1;
@@ -46,7 +59,7 @@ export class QuoteComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }

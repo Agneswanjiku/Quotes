@@ -1,9 +1,11 @@
 <div class="card-body">
     <p> Author: {{quote.description}}</p>
     <p> Posted By: {{quote.author}} </p>
+    <p> upvote: {{quote.upvote}} </p>
+    <p> downvote: {{quote.downvote}} </p>
+
      <div>
         <p>Posted on: {{quote.postDate|dateCount}} .</p>
-        <app-count-input></app-count-input>
        </div>
        <div class="button">
         <button (click)='quoteDelete(true)' class="btn btn-danger">Delete Quote</button>

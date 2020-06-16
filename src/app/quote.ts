@@ -5,5 +5,7 @@ export class Quote {
   author: string;
   constructor(public name: string, public publisher: string, public description: string, public postDate: Date){
     this.showDescription = false;
+    this.upvote=0;
+    this.downvote=0;
   }
 }

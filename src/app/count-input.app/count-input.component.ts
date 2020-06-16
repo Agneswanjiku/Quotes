@@ -21,7 +21,7 @@ increment(){
 }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

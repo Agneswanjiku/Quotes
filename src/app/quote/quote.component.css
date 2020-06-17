@@ -1,4 +1,25 @@
 #Up{
     margin: 10px;
-    
-}
+    }
+.header{
+    font-size:20px;
+  
+  
+  }
+  text{
+    color:blue;
+  }
+  
+  h1{
+    color:green;
+    text-align: center;
+  }
+  .container{
+    height: 200px;
+  }
+  button{
+    margin: 2rem;
+  }
+  body{
+      background-color: blue;
+  }

@@ -1,7 +1,7 @@
 <strong>Brainy QUOTES</strong>
 Created on 2020, by Agnes Wanjiku.
 <strong>Description.</strong>
-This is an application that enables viewers to add quotes,to write the author of the quote and to write their names when they add the quote.Also enables the viewers to downvote and upvote existing quotes.This is the link to the project: 
+This is an application that enables viewers to add quotes,to write the author of the quote and to write their names when they add the quote.Also enables the viewers to downvote and upvote existing quotes.This is the link to the project: https://agneswanjiku.github.io/Quotes/
 <strong>Setup Installation.</strong>
 The installations used for this app are angularjs,and github.
 <strong>Known bugs.</strong>
